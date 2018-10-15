@@ -1,0 +1,163 @@
+.container {
+  background: #0a0d0f;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 350px;
+  display: grid;
+  border-radius: 10px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.title h3 {
+  font-family: "Monoton", cursive;
+  color: #00ff00;
+  font-weight: lighter;
+  margin: 0 auto;
+}
+
+.controls {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 10px;
+  .control-container {
+    display: block;
+    span {
+      color: white;
+      font-size: 0.4rem;
+    }
+  }
+
+  .play-stop {
+    color: white;
+    width: 50px;
+    height: 25px;
+    background: #2a333c;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: all 0.5s;
+    cursor: pointer;
+    i {
+      font-size: 0.6rem;
+      cursor: pointer;
+    }
+    &:hover {
+      transition: all 0.5s;
+      background: #1f262d;
+    }
+  }
+}
+
+.note-name-container {
+  display: block;
+}
+
+.note-name {
+  height: 25px;
+  color: white;
+  text-align: right;
+  margin-right: 10px;
+  h3 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    line-height: 25px;
+    font-size: 10px;
+  }
+}
+
+.sequencer {
+  display: flex;
+  margin: 0 auto;
+}
+
+.pad-container {
+  background: #0a0d0f;
+  display: block;
+}
+
+.pad {
+  background: #2a333c;
+  margin: 2px;
+  width: 25px;
+  height: 25px;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px 0 rgba(black, 0.3);
+  transition: background 100ms ease;
+  cursor: pointer;
+  &:hover {
+    background: rgba(0, 255, 0, 0.3);
+  }
+  &.active {
+    background: #3f4d5a;
+  }
+  &.active:hover {
+    background: rgba(0, 255, 0, 0.3);
+  }
+  &.on {
+    box-shadow: 0 0 12px 0 rgba(#00ff00, 0.8);
+    background: #00ff00 !important;
+    transition: background 100ms ease;
+  }
+}
+
+input {
+  font-size: 0.5rem;
+  background: transparent;
+  border: none;
+  color: white;
+  text-align: center;
+  &:focus {
+    outline: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 700px;
+  }
+
+  .title h3 {
+    font-size: 2rem;
+    margin: 25px auto;
+  }
+
+  .controls {
+    .control-container {
+      span {
+        color: white;
+        font-size: 0.8rem;
+      }
+    }
+
+    .play-stop {
+      width: 100px;
+      height: 50px;
+      i {
+        font-size: 1.5rem;
+        line-height: 50px;
+      }
+    }
+  }
+
+  .note-name {
+    height: 50px;
+    margin: 4px;
+    h3 {
+      font-size: 15px;
+      line-height: 50px;
+    }
+  }
+
+  .pad {
+    margin: 4px;
+    width: 50px;
+    height: 50px;
+  }
+
+  input {
+    line-height: 50px;
+    font-size: 1rem;
+  }
+}
