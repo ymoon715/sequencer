@@ -4,12 +4,12 @@ self.__precacheManifest = [
     "url": "/sequencer/static/media/Snare.46c08ecd.mp3"
   },
   {
-    "revision": "d4f233be4c90b405737f",
-    "url": "/sequencer/static/css/main.f63de540.chunk.css"
+    "revision": "a8e646f03dc9a8ae6db1",
+    "url": "/sequencer/static/css/main.e03a83ba.chunk.css"
   },
   {
-    "revision": "033a3c5d72dca47e4458",
-    "url": "/sequencer/static/js/1.033a3c5d.chunk.js"
+    "revision": "dc7d6b8211fa8da143ed",
+    "url": "/sequencer/static/js/1.dc7d6b82.chunk.js"
   },
   {
     "revision": "21b1cf13bc65110b79f7",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/sequencer/static/media/Rim.c0acb0e2.mp3"
   },
   {
-    "revision": "d4f233be4c90b405737f",
-    "url": "/sequencer/static/js/main.d4f233be.chunk.js"
+    "revision": "a8e646f03dc9a8ae6db1",
+    "url": "/sequencer/static/js/main.a8e646f0.chunk.js"
   },
   {
     "revision": "3857e4bfbc208fd589cee0dc653519dd",
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/sequencer/static/media/SFX.9cb8458f.mp3"
   },
   {
-    "revision": "af7fa1a839651dc0367630e2232bf4aa",
+    "revision": "8d426acaaf1510f9967873e69b2c948a",
     "url": "/sequencer/index.html"
   }
 ];
