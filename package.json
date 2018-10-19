@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://ymoon715.github.io/sequencer/",
   "dependencies": {
+    "@material-ui/core": "^3.2.2",
     "classnames": "^2.2.6",
     "gh-pages": "^2.0.1",
     "react": "^16.5.2",

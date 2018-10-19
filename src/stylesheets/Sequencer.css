@@ -1,19 +1,23 @@
 .container {
   background: #0a0d0f;
-  margin-left: auto;
   margin-right: auto;
-  margin-top: 100px;
-  width: 350px;
+  width: 325px;
   display: grid;
-  border-radius: 10px;
-  padding-top: 25px;
-  padding-bottom: 25px; }
+  border-radius: 10px; }
 
 .title h3 {
   font-family: "Monoton", cursive;
   color: #00ff00;
   font-weight: lighter;
   margin: 0 auto; }
+
+.visualizer {
+  width: 320px;
+  height: 50px;
+  background: black;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 5px; }
 
 .controls {
   display: -webkit-box;
@@ -22,25 +26,51 @@
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 10px; }
+  .controls .main-controls {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
   .controls .control-container {
     display: block; }
     .controls .control-container span {
       color: white;
       font-size: 0.4rem; }
+  .controls .filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 150px;
+    border-radius: 10px;
+    margin: 2px;
+    padding-bottom: 10px;
+    background: #1f262d; }
+    .controls .filter span {
+      font-size: 0.4rem; }
   .controls .play-stop {
     color: white;
-    width: 50px;
-    height: 25px;
+    width: 40px;
+    height: 32.5px;
     background: #2a333c;
     border-radius: 5px;
-    margin-left: 10px;
+    margin-left: 7.5px;
     -webkit-transition: all 0.5s;
     -o-transition: all 0.5s;
     transition: all 0.5s;
+    overflow: hidden;
     cursor: pointer; }
     .controls .play-stop i {
-      font-size: 0.6rem;
-      cursor: pointer; }
+      font-size: 1rem;
+      cursor: pointer;
+      line-height: 32.5px; }
+    .controls .play-stop p {
+      margin: 0 auto;
+      color: #00ff00;
+      background: black;
+      width: 20px;
+      font-size: 0.4rem;
+      border-radius: 5px; }
     .controls .play-stop:hover {
       -webkit-transition: all 0.5s;
       -o-transition: all 0.5s;
@@ -48,18 +78,20 @@
       background: #1f262d; }
 
 .note-name-container {
-  display: block; }
+  display: block;
+  margin-top: 120px;
+  margin-right: 5px; }
 
 .note-name {
-  height: 25px;
+  height: 18px;
   color: white;
   text-align: right;
-  margin: 2px; }
+  margin: 1px; }
   .note-name h3 {
     margin-top: 0px;
     margin-bottom: 0px;
-    line-height: 25px;
-    font-size: 10px; }
+    line-height: 18px;
+    font-size: 0.2rem; }
 
 .sequencer {
   display: -webkit-box;
@@ -73,10 +105,10 @@
 
 .pad {
   background: #2a333c;
-  margin: 2px;
-  width: 25px;
-  height: 25px;
-  border-radius: 5px;
+  margin: 1px;
+  width: 18px;
+  height: 18px;
+  border-radius: 2.5px;
   -webkit-box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
   box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
   -webkit-transition: background 100ms ease;
@@ -97,23 +129,43 @@
     -o-transition: background 100ms ease;
     transition: background 100ms ease; }
 
-input {
-  font-size: 0.5rem;
-  background: transparent;
-  border: none;
-  color: white;
-  text-align: center; }
-  input:focus {
+input[type="range"] {
+  -webkit-appearance: none;
+  width: 30px;
+  margin: 0; }
+  input[type="range"]:focus {
     outline: none; }
+  input[type="range"]::-webkit-slider-runnable-track {
+    background: white;
+    height: 1px;
+    margin-top: -15px;
+    cursor: pointer; }
+  input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    height: 7.5px;
+    width: 7.5px;
+    margin-top: -3px;
+    border-radius: 25px;
+    background: black; }
+
+.application {
+  display: block; }
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
 
 @media (min-width: 768px) {
   .container {
-    width: 700px; }
+    width: 675px; }
   .title h3 {
     font-size: 2rem;
     margin: 25px auto; }
+  .visualizer {
+    height: 100px;
+    width: 650px; }
   .controls .control-container span {
-    color: white;
     font-size: 0.8rem; }
   .controls .play-stop {
     width: 100px;
@@ -121,16 +173,39 @@ input {
     .controls .play-stop i {
       font-size: 1.5rem;
       line-height: 50px; }
+    .controls .play-stop p {
+      width: 40px;
+      font-size: 0.8rem; }
+  .controls .filter {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    width: 230px;
+    border-radius: 10px;
+    margin: 2px;
+    padding-bottom: 10px;
+    background: #1f262d; }
+    .controls .filter span {
+      font-size: 0.8rem; }
   .note-name {
-    height: 50px;
-    margin: 4px; }
+    height: 35px;
+    margin: 2px; }
     .note-name h3 {
-      font-size: 15px;
+      font-size: 10px;
       line-height: 50px; }
   .pad {
-    margin: 4px;
-    width: 50px;
-    height: 50px; }
-  input {
-    line-height: 50px;
-    font-size: 1rem; } }
+    margin: 3px;
+    width: 35px;
+    height: 35px; }
+  input[type="range"] {
+    font-size: 1rem;
+    width: 75px; }
+    input[type="range"]::-webkit-slider-runnable-track {
+      height: 3px; }
+    input[type="range"]::-webkit-slider-thumb {
+      height: 10px;
+      width: 10px;
+      margin-top: -3.5px;
+      border-radius: 50%; } }
