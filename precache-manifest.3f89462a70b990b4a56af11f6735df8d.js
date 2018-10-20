@@ -4,8 +4,8 @@ self.__precacheManifest = [
     "url": "/sequencer/static/media/Snare.46c08ecd.mp3"
   },
   {
-    "revision": "a8e646f03dc9a8ae6db1",
-    "url": "/sequencer/static/css/main.e03a83ba.chunk.css"
+    "revision": "340aa29b1a3a3ca08342",
+    "url": "/sequencer/static/css/main.3cfb5e57.chunk.css"
   },
   {
     "revision": "dc7d6b8211fa8da143ed",
@@ -32,8 +32,8 @@ self.__precacheManifest = [
     "url": "/sequencer/static/media/Rim.c0acb0e2.mp3"
   },
   {
-    "revision": "a8e646f03dc9a8ae6db1",
-    "url": "/sequencer/static/js/main.a8e646f0.chunk.js"
+    "revision": "340aa29b1a3a3ca08342",
+    "url": "/sequencer/static/js/main.340aa29b.chunk.js"
   },
   {
     "revision": "3857e4bfbc208fd589cee0dc653519dd",
@@ -60,7 +60,7 @@ self.__precacheManifest = [
     "url": "/sequencer/static/media/SFX.9cb8458f.mp3"
   },
   {
-    "revision": "8d426acaaf1510f9967873e69b2c948a",
+    "revision": "f89dae04472e75d9bdb72fb86e3bfa0a",
     "url": "/sequencer/index.html"
   }
 ];
