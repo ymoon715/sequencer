@@ -163,6 +163,14 @@ input[type="range"] {
 }
 
 @media (min-width: 768px) {
+  .application {
+    margin: 0 auto;
+  }
+  .content {
+    width: 768px;
+    display: flex;
+    margin: 0 auto;
+  }
   .container {
     width: 675px;
   }
@@ -207,13 +215,15 @@ input[type="range"] {
       }
     }
   }
-
+  .note-name-container {
+    margin-top: 185px;
+  }
   .note-name {
     height: 35px;
-    margin: 2px;
+    margin: 3px;
     h3 {
       font-size: 10px;
-      line-height: 50px;
+      line-height: 35px;
     }
   }
 
