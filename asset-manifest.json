@@ -1,7 +1,7 @@
 {
   "main.css": "/sequencer/static/css/main.3cfb5e57.chunk.css",
-  "main.js": "/sequencer/static/js/main.340aa29b.chunk.js",
-  "main.js.map": "/sequencer/static/js/main.340aa29b.chunk.js.map",
+  "main.js": "/sequencer/static/js/main.5d2f96e0.chunk.js",
+  "main.js.map": "/sequencer/static/js/main.5d2f96e0.chunk.js.map",
   "static/js/1.dc7d6b82.chunk.js": "/sequencer/static/js/1.dc7d6b82.chunk.js",
   "static/js/1.dc7d6b82.chunk.js.map": "/sequencer/static/js/1.dc7d6b82.chunk.js.map",
   "runtime~main.js": "/sequencer/static/js/runtime~main.21b1cf13.js",
@@ -19,6 +19,6 @@
   "static/media/OpenHiHat.mp3": "/sequencer/static/media/OpenHiHat.8fe135c2.mp3",
   "static/css/main.3cfb5e57.chunk.css.map": "/sequencer/static/css/main.3cfb5e57.chunk.css.map",
   "index.html": "/sequencer/index.html",
-  "precache-manifest.3f89462a70b990b4a56af11f6735df8d.js": "/sequencer/precache-manifest.3f89462a70b990b4a56af11f6735df8d.js",
+  "precache-manifest.1e5aa450753b992063d8046a4ef3687d.js": "/sequencer/precache-manifest.1e5aa450753b992063d8046a4ef3687d.js",
   "service-worker.js": "/sequencer/service-worker.js"
 }
